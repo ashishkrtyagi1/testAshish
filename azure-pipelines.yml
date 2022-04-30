@@ -2,7 +2,7 @@
 # - master
 
 pool:
-  vmImage: 'Hosted Agent'
+  vmImage: 'windows-latest'
 
 variables:
   subscription: Azure subscription 1(11bdabb4-6381-4b90-bf8e-57a6e6c1d2a9)
