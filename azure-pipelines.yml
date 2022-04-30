@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  subscription: Visual Studio Enterprise(17b12858-3960-4e6f-a663-a06fdae23428)
+  subscription: Azure subscription 1(11bdabb4-6381-4b90-bf8e-57a6e6c1d2a9)
   resourceGroup: resourcegroup-tfstate
   storageAccount: terraformtfstateskit
   container: tfstate
@@ -17,7 +17,7 @@ steps:
 - task: TerraformInstaller@0
   displayName: install Terraform v0.12.28
   inputs:
-    terraformVersion: '0.12.28'
+    terraformVersion: 'latest'
 
 - task: TerraformTaskV1@0
   displayName: terraform init
